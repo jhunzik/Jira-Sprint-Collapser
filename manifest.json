@@ -4,10 +4,6 @@
   "name": "Jira Sprint Collapser",
   "description": "This extension collapses all of the sprints in the Jira backlog",
   "version": "1.0",
-  "content_scripts": [{
-      "matches": ["<all_urls>"],
-      "js": ["contentScript.js"]
-  }],
   "browser_action": {
     "default_icon": "logo.png"
   },

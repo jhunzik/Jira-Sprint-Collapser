@@ -1,6 +1,6 @@
 alert("contentScript.js");
-var nodeList = [].slice.apply(document.getElementsByClassName("ghx-backlog-container"));
-Array.prototype.forEach(nodeList, node => {
-node.toggle("ghx-open");
-node.toggle("ghx-closed");
+[].forEach.call(document.getElementsByClassName("ghx-backlog-container"), node => {
+    node.classList.remove("ghx-open");
+    node.classList.add("ghx-closed");
 });
+
