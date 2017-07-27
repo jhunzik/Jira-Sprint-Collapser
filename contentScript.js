@@ -3,4 +3,3 @@ alert("contentScript.js");
     node.classList.remove("ghx-open");
     node.classList.add("ghx-closed");
 });
-
